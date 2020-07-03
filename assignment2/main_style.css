@@ -1,0 +1,108 @@
+body {
+	font-family: 'Comic Sans MS';
+}
+
+body h2 {
+	font-size: 28pt;
+}
+
+li {
+	font-family: 'Courier New', Courier;
+	font-size: 22pt;
+	margin-left: 40px;
+}
+
+#full_content_super	{
+	border-style: solid;
+	border-color: #33ABF9;
+	border-radius: 40px;
+	width: 80%;
+}
+
+#full_content {
+	margin-left: 20px;
+	margin-right: 20px;
+	height: auto;
+	max-height: 500px;
+	overflow-y: auto;
+	transform: scaleY(0.95);
+}
+
+#profile_page_header , #profile_page_header a{
+    background-color: #33ABF9;
+    padding: 20px 20px 20px 40px;
+    color: #ffffff;
+}
+
+#profile_page_header h1{
+	font-size: 36pt;
+}
+
+@keyframes mario_animation {
+  0% {
+  	background-color: #03Ac13;
+  	left: 0px;
+  	top: 100px;
+  }
+  100% {
+  	background-color: #99edc3;
+  	left: 0px;
+  	top: 0px;
+  }
+}
+
+#profile_pic {
+	height: 420px;
+	width: 280px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 20px;
+	object-fit: cover;
+	background-color: green;
+	position: relative;
+	animation-name: mario_animation;
+	animation-delay: 1s;
+	animation-duration: 1.3s;
+	animation-iteration-count: 4;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	/*animation-timing-function: cubic-bezier(0, 0, 0.2, 1);*/
+}
+
+#contact a{
+	float: right;
+	color: #ffffff;
+	border-color: #33ABF9;
+	border-style: solid;
+	border-radius: 10px;
+	transition: background-color 1s;
+	padding: 10px 10px 10px 10px;
+}
+#contact a:hover{
+	border-color: #ffffff;
+	color: #33ABF9;
+	background-color: #ffffff;
+}
+
+#education_text {
+	display: flex;
+	flex-direction: column;
+}
+
+#hobbies_text {
+	display: flex;
+	flex-direction: row;
+}
+
+#ambitions_text {
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="c"] {
+    width: 100%;
+  }
+}
