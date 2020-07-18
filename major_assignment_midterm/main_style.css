@@ -1,4 +1,7 @@
-
+@font-face {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	src: url("../comic_sans_font/comici.ttf");
+}
 h1 {
 	font-size: 36pt;
 }
@@ -24,7 +27,6 @@ footer a, footer a:hover{
 .jumbotron {
 	color: white;
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	src: url("../comic_sans_font/comici.ttf");
 	background-image: url(../images/p_b_02.png);
 	background-size: cover;
 	width : 100%;
@@ -34,7 +36,6 @@ footer a, footer a:hover{
 
 .page-header{
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	src: url("../comic_sans_font/comici.ttf");
 }
 .page-header > center > h1{
 	font-size: 40pt;
