@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Sheel Shah</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="main_style.css">
+<link rel="stylesheet" type="text/css" href="hamburger.css">
+</head>
+<body>
+<header class="navbar navbar-expand-md navbar-dark bg-dark mb-3 fixed-top">
+    <div class="container-fluid">
+        <a href="" class="navbar-brand mr-3">Sheel Shah</a>
+        <button type="button" class="navbar-toggler hamburger hamburger--squeeze" data-toggle="collapse" data-target="#navbarCollapse" id="hamburger_button">
+            <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav nav nav-tabs">
+                <a href="#home" class="nav-item nav-link" id="homenav" onclick="show_home()">Home</a>
+                <a href="#me" class="nav-item nav-link" id="menav" onclick="show_me()">About Me</a>
+                <a href="#projects" class="nav-item nav-link" id="projectsnav" onclick="show_projects()">Projects</a>
+                <a href="#notsosoon" class="nav-item nav-link" id="nssnav" onclick="show_nss()">Unknown</a>
+                <a href="#contact" class="nav-item nav-link" id="contactnav" onclick="show_contact()">Contact</a>
+            </div>
+        </div>
+    </div>    
+</header>
+<div class="container-fluid" id="main_container" style="padding-top: 70px;">
+	<div id="home">
+	    <div class="jumbotron">
+	        <h1>Welcome to my website</h1>
+	        <p class="lead">
+	        	<h4>Not gonna lie, this website has turned out to be pretty nice, given I made it in under 3 weeks and entirely from scratch. Big up the UGAC web development team for a wonderful intro to static website development. Feel free to move around the website and hit me up if you have suggestions or need help or just want to get in touch (after, of course, sanitizing your hands :p).
+	        	</h4>
+	        </p>
+	        <p>
+	        	<a href="#contact" onclick="click_id('contactnav')" class="btn btn-success btn-lg">Say Hi!</a>
+	        </p>
+	    </div>
+	    <div class="row">
+	        <div class="col-md-4">
+	            <h2>About Me</h2>
+	            <p>Get to know all about who I am, where I am, what I do, and other fun facts here. I promise that the fun facts are age appropriate ;)</p>
+	            <p><a href="#me" onclick="click_id('menav')" class="btn btn-success">Head There</a></p>
+	        </div>
+	        <div class="col-md-4">
+	            <h2>Projects</h2>
+	            <p>As much as I hate to admit it, I am sorta geeky. So if you're here to test my mettle, you can't possibly return without checking my projects out first.</p>
+	            <p><a href="#projects" onclick="click_id('projectsnav')" class="btn btn-success">Yes Please</a></p>
+	        </div>
+	        <div class="col-md-4">
+	            <h2>Some name</h2>
+	            <p>I made this section only for the sake of completion, but it turned out to be fairly good. I amn't telling you what's there.</p>
+	            <p><a href="#notsosoon" onclick="click_id('nssnav')" class="btn btn-success">Find Out</a></p>
+	        </div>
+	    </div>
+	</div>
+	<div id="me">
+		<div class="page-header">
+			<center>
+				<h1>All about me</h1>
+			</center>
+		</div>
+		<br>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<p class="content_paragraph">
+						First off, I am a student pursuing electrical engineering in a dual degree programme at IIT Bombay. In case you wonder, my name is Sheel, I am 19, and I live in Mumbai.
+					</p>
+					<p class="content_paragraph">
+						Now that you've measured my ass, let me talk some more about myself. I am an avid reader and also somewhat of a fitness freak. I play decent badminton, and am always open to sports. I listen to a lot of music too, but never have I come across someone who appreciates my taste for electronic music, so I guess that it is my choice that's poor.
+					</p>
+					<p class="content_paragraph">
+						Academically, I enjoy math and computer science, but only for as long as it doesn't get too theoretical. Fun Fact - all the math that I have been coming across is way too theoretical, and whilst I feel intimidated at first, it doesn't turn out too bad and in fact, makes a lot of sense. But it's too geeky to admit that you enjoy such deep math, and so it'll take some time before I can go talking about it.
+					</p>
+					<p class="content_paragraph">
+						Fun Fact 2 - I enjoy watching PewDiePie, if you haven't already guessed. Also, for other coding addict mates, I am a Sublime Text fanatic and if you ever want to spark a debate with me, all you have to do is name another editor.
+					</p>
+					<p class="content_paragraph">
+						Let's go champ! (Yet another reference)
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="projects">proj</div>
+	<div id="notsosoon">nss</div>
+	<div id="contact">con</div>
+	<hr>
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <p><s>Copyright &copy; 2020</s>&nbsp;&nbsp;&nbsp;&nbsp;It's free real estate</p>
+            </div>
+            <div class="col-md-6 text-md-right"  style="float: right;">
+                <div class="text-dark">
+	                <a href="mailto: sheelfshah@gmail.com">
+	                	<span class="fa fa-envelope-open-o" aria-hidden="true"></span>
+	                </a>
+	                <span class="text-muted mx-2">|</span>
+	                <a href="https://www.facebook.com/sheel.shah.37">
+	                	<span class="fa fa-facebook-square fa-lg" aria-hidden="true"></span>
+	                </a>
+	                <span class="text-muted mx-2">|</span>
+	                <a href="https://www.github.com/sheelfshah">
+	                	<span class="fa fa-github fa-lg" aria-hidden="true"></span>
+	                </a>
+	                <span class="text-muted mx-2">|</span>
+                	No Instagram for you
+            	</div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="hamburger_animation.js"></script>
+<script type="text/javascript">
+	/* manage color of current navigation item */
+	$(document).on('click', '.nav-item', function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		var canSee = $("#hamburger_button").is(":visible");
+		if (canSee){
+			document.getElementById("hamburger_button").click();
+		}
+	});
+	window.addEventListener("hashchange", function () {
+    	window.scrollTo(window.scrollX, window.scrollY - 1000);
+	});
+	if (location.hash != "") {
+	    var url = location.href;
+	    url = url.replace(location.hash,"");
+	    location.replace(url);
+	}
+</script>
+<script src="section_handling.js"></script>
+</body>
+</html>

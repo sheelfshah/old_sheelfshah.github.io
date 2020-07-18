@@ -1,0 +1,69 @@
+
+h1 {
+	font-size: 36pt;
+}
+h2 {
+	font-size: 30pt;
+}
+h3 {
+	font-size: 25pt;
+}
+h4 {
+	font-size: 20pt;
+}
+
+p{
+	font-size: 15pt;
+}
+
+footer a, footer a:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+.jumbotron {
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	src: url("../comic_sans_font/comici.ttf");
+	background-image: url(../images/p_b_02.png);
+	background-size: cover;
+	width : 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.page-header{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	src: url("../comic_sans_font/comici.ttf");
+}
+.page-header > center > h1{
+	font-size: 40pt;
+	text-decoration: underline;
+}
+
+.nav-item.active{
+	font-size: 13pt;
+}
+
+.navbar-nav .nav-link{
+	color: white !important;
+}
+
+.navbar-nav .nav-link.active{
+	color: #000 !important;
+}
+
+.btn.btn-success {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	src: url("../comic_sans_font/comici.ttf");
+	font-size: 20pt;
+	padding: 5px 5px 5px 5px;
+}
+.col-md-4 .btn.btn-success {
+	float: right;
+}
+
+.content_paragraph {
+	font-size: 18pt;
+	font-family: "Times New Roman", Times, serif;
+}
