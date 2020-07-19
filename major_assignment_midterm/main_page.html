@@ -91,7 +91,55 @@
 			</div>
 		</div>
 	</div>
-	<div id="projects">proj</div>
+	<div id="projects">
+		<div class="page-header">
+			<center>
+				<h1>Projects</h1>
+				<h2><small>
+					Check all of them out on <a href="https://www.github.com/sheelfshah">GitHub</a>
+				</small></h2>
+			</center>
+		</div>
+		<br>
+		<div class="container-fluid">
+			<div class="row justify-content-center" id="project_row_1">
+				<div class="col-md-5" class="projects_project" id="uttt_project">
+					<h2 class="project_heading">
+						<a href="https://www.github.com/sheelfshah/ultimate-tic-tac-toe-ai">Ultimate Tic Tac Toe AI</a>
+					</h2>
+					<p class="content_paragraph project_description">
+						An AI agent that plays the complex game of ultimate tic tac toe using the pruned minimax algorithm. A GUI that allows you to play against the bot has also been implemented.
+					</p>
+				</div>
+				<div class="col-md-5" class="projects_project" id="sa_project">
+					<h2 class="project_heading">
+						<a href="https://www.github.com/sheelfshah/sentiment-analysis">Sentiment Analysis</a>
+					</h2>
+					<p class="content_paragraph project_description">
+						A team project as a submission to the StudentCoder challenge by Hexaware. A tool that analyses product review sentiment and produces insights based on different categories such as quality, price, etc. We finished in the top 3.
+					</p>
+				</div>
+			</div>
+			<div class="row justify-content-center" id="project_row_2">
+				<div class="col-md-5" class="projects_project" id="mlgym_project">
+					<h2 class="project_heading">
+						<a href="https://github.com/codeLAlit/MLGYM">ML Gym</a>
+					</h2>
+					<p class="content_paragraph project_description">
+						A group project taken under SoC IIT-B that implements machine learning algorithms from scratch and allows users to train/test them on the website. I created all of the backend, most of the frontend, and implemented a couple of ML algorithms.
+					</p>
+				</div>
+				<div class="col-md-5" class="projects_project" id="web_project">
+					<h2 class="project_heading">
+						<a href="https://www.github.com/sheelfshah/sheelfshah.github.io">This Website</a>
+					</h2>
+					<p class="content_paragraph project_description">
+						I mean, come on. I don't know about you but I am in love with this website. I learned HTML and CSS for 2 weeks and in the 3<sup>rd</sup> week, this beauty was created. All hail the mighty WnCC.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="notsosoon">nss</div>
 	<div id="contact">con</div>
 	<hr>
@@ -131,6 +179,8 @@
 			document.getElementById("hamburger_button").click();
 		}
 	});
+	var cw = $('.projects_project').width();
+	$('.projects_project').css({'height':cw+'px'});
 	window.addEventListener("hashchange", function () {
     	window.scrollTo(window.scrollX, window.scrollY - 1000);
 	});

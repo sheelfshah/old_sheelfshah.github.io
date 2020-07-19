@@ -1,6 +1,6 @@
 @font-face {
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	src: url("../comic_sans_font/comici.ttf");
+	font-family: "Comic Neue", cursive, sans-serif;
+	src: url("../comic_neue_font/ComicNeue-Regular.ttf");
 }
 h1 {
 	font-size: 36pt;
@@ -26,7 +26,7 @@ footer a, footer a:hover{
 
 .jumbotron {
 	color: white;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Comic Neue", cursive, sans-serif;
 	background-image: url(../images/p_b_02.png);
 	background-size: cover;
 	width : 100%;
@@ -35,7 +35,7 @@ footer a, footer a:hover{
 }
 
 .page-header{
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Comic Neue", cursive, sans-serif;
 }
 .page-header > center > h1{
 	font-size: 40pt;
@@ -55,8 +55,7 @@ footer a, footer a:hover{
 }
 
 .btn.btn-success {
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	src: url("../comic_sans_font/comici.ttf");
+	font-family: "Comic Neue", cursive, sans-serif;
 	font-size: 20pt;
 	padding: 5px 5px 5px 5px;
 }
@@ -67,4 +66,95 @@ footer a, footer a:hover{
 .content_paragraph {
 	font-size: 18pt;
 	font-family: "Times New Roman", Times, serif;
+}
+
+@keyframes show_description {
+  0% {
+  	opacity: 0;
+  }
+  100% {
+  	opacity: 1;
+  }
+}
+
+.projects_project {
+	width: 100%;
+	position: relative;
+	color: #ffffff;
+}
+
+.project_heading{
+	margin-top: 30px;
+	font-size: 50pt;
+}
+
+.project_heading > a{
+	color: #ffffff;
+}
+
+.project_heading > a:hover{
+	text-decoration: none;
+}
+
+.project_description{
+	color: #ffffff;
+	margin-top: 30px;
+	font-size: 20pt;
+	opacity: 0;
+	animation-name: show_description;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+}
+
+#uttt_project {
+	background-image: url(../images/utt_background_2.jpg);
+	background-size: cover;
+	border-radius: 40px;
+	background-color: #888888;
+  	background-blend-mode: multiply;
+  	background-position: center;
+  	margin-bottom: 40px;
+  	margin-left: 40px;
+  	margin-right: 40px;
+  	padding: 20px;
+}
+
+#sa_project {
+	background-image: url(../images/sent_anal.jpg);
+	background-size: cover;
+	border-radius: 40px;
+	background-color: #888888;
+  	background-blend-mode: multiply;
+  	background-position: center;
+  	margin-bottom: 40px;
+  	margin-left: 40px;
+  	margin-right: 40px;
+  	padding: 20px;
+}
+
+#mlgym_project {
+	background-image: url(../images/ml_background.jfif);
+	background-size: cover;
+	border-radius: 40px;
+	background-color: #888888;
+  	background-blend-mode: multiply;
+  	background-position: center;
+  	margin-bottom: 40px;
+  	margin-left: 40px;
+  	margin-right: 40px;
+  	padding: 20px;
+}
+
+#web_project {
+	background-image: url(../images/web_background.gif);
+	background-size: cover;
+	border-radius: 40px;
+	background-color: #888888;
+  	background-blend-mode: multiply;
+  	background-position: center;
+  	margin-bottom: 40px;
+  	margin-left: 40px;
+  	margin-right: 40px;
+  	padding: 20px;
 }
