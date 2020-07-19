@@ -209,19 +209,21 @@
         </div>
     </footer>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="hamburger_animation.js"></script>
 <script type="text/javascript">
-	/* manage color of current navigation item */
-	$(document).on('click', '.nav-item', function(){
-		$(this).addClass('active').siblings().removeClass('active');
-		var canSee = $("#hamburger_button").is(":visible");
-		if (canSee){
-			document.getElementById("hamburger_button").click();
-		}
-	});
-	var cw = $('.projects_project').width();
-	$('.projects_project').css({'height':cw+'px'});
+	var navContainer = document.getElementsByClassName("navbar-nav")[0];
+	var btns = document.getElementsByClassName("nav-link");
+	for (var i = 0; i < btns.length; i++) {
+	    btns[i].addEventListener("click", function() {
+		    var current = document.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		    var canSee = window.innerWidth <= 768;
+		    if (canSee){
+				document.getElementById("hamburger_button").click();
+			}
+	    });
+	}
 	window.addEventListener("hashchange", function () {
     	window.scrollTo(window.scrollX, window.scrollY - 1000);
 	});
