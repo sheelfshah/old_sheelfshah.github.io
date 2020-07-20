@@ -2,6 +2,21 @@
 	font-family: "Comic Neue", cursive, sans-serif;
 	src: url("../comic_neue_font/ComicNeue-Regular.ttf");
 }
+
+body{
+	background-color: rgb(52,58,64);
+	color: white;
+}
+
+hr{
+	background-color: white;
+}
+
+span{
+	color: white;
+	font-size: 16pt;
+}
+
 h1 {
 	font-size: 36pt;
 }
@@ -23,6 +38,14 @@ footer a, footer a:hover{
 	text-decoration: none;
 	color: #000;
 }
+
+@media screen and (max-width: 768px) {
+	.navbar {
+    	border-bottom:1px solid #ffffff;
+	}
+}
+
+
 
 .jumbotron {
 	color: white;
@@ -102,8 +125,8 @@ footer a, footer a:hover{
 	font-size: 20pt;
 	opacity: 0;
 	animation-name: show_description;
-	animation-delay: 1s;
-	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-duration: 3s;
 	animation-fill-mode: both;
 }
 
@@ -164,15 +187,104 @@ footer a, footer a:hover{
 }
 
 #notsosoon{
-	background-image: url(../images/moonSurface.jpg);
+	/*background-image: url(../images/nss_background.jpg);
 	background-size: cover;
-	background-color: #888888;
+	background-color: #ffffff;
   	background-blend-mode: multiply;
-  	background-position: center;
+  	background-position: center;*/
 }
 
 .meme_img{
 	width: 100%;
 	height: 600px;
 	border-radius: 40px;
+}
+
+form{
+	background-image: url(../images/p_b_02.png);
+	background-size: cover;
+	padding-bottom: 20px;
+	border-radius: 40px;
+	animation-name: show_description;
+	animation-delay: 1.2s;
+	animation-duration: 2.5s;
+	animation-fill-mode: both;
+}
+
+.fields{
+	padding: 20px;
+	padding-bottom: 20px;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+label {
+	color: #ffffff;
+	display: block;
+	font-size: 20pt;
+	font-weight: 300;
+	letter-spacing: 3pt;
+	line-height: 1.5;
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+}
+
+textarea, input[type="text"]{
+	width: 90%;
+	border-radius: 20px;
+	height: 150px;
+	font-family: "Comic Neue", cursive, sans-serif;
+	font-size: 20pt;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 0px;
+	outline: none;
+	border-width: 0px;
+}
+
+input[type="text"]{
+	border-radius: 10px;
+	height: 40px;
+}
+
+.field{
+	width: 90%;
+	margin: auto auto;
+}
+
+.half {
+	width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+	form > .fields > .field.half {
+		width: 100%;
+	}
+}
+
+input[type="submit"], input[type="reset"]{
+	border-radius: 10px;
+	height: 40px;
+	border-width: 2px;
+	border-style: solid;
+	outline: none;
+	transition-duration: 0.4s;
+	background-color: transparent;
+	color: #ffffff;
+	border-color: #ffffff;
+	zoom: 1.5;
+	float: center;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border-width: 2px;
 }

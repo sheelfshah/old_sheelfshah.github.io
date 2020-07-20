@@ -47,15 +47,15 @@ function show_nss(){
 function show_contact(){
 	show_none();
 	contact_div.style.display='block';
-	navbar.style.backgroundImage="url('../images/p_b_02.png')";
+	navbar.style.backgroundImage="";
 	navbar.style.backgroundSize = 'cover';
 }
 
 function click_id(id){
 	document.getElementById(id).click();
 	setTimeout(function () {
-        var canSee = $("#hamburger_button").is(":visible");
-		if (canSee){
+        var canSee = window.innerWidth <= 768;
+	    if (canSee){
 			document.getElementById("hamburger_button").click();
 		}
     }, 1000);
