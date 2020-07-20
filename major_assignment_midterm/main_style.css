@@ -114,6 +114,7 @@ footer a, footer a:hover{
 	background-color: #888888;
   	background-blend-mode: multiply;
   	background-position: center;
+  	width: 100%;
   	margin-bottom: 40px;
   	margin-left: 2%;
   	margin-right: 2%;
@@ -127,6 +128,7 @@ footer a, footer a:hover{
 	background-color: #888888;
   	background-blend-mode: multiply;
   	background-position: center;
+  	width: 100%;
   	margin-bottom: 40px;
   	margin-left: 2%;
   	margin-right: 2%;
@@ -140,6 +142,7 @@ footer a, footer a:hover{
 	background-color: #888888;
   	background-blend-mode: multiply;
   	background-position: center;
+  	width: 100%;
   	margin-bottom: 40px;
   	margin-left: 2%;
   	margin-right: 2%;
@@ -153,18 +156,23 @@ footer a, footer a:hover{
 	background-color: #888888;
   	background-blend-mode: multiply;
   	background-position: center;
+  	width: 100%;
   	margin-bottom: 40px;
   	margin-left: 2%;
   	margin-right: 2%;
   	padding: 20px;
 }
 
-.carousel{
-	width: 90%;
-	height: 80%;
+#notsosoon{
+	background-image: url(../images/moonSurface.jpg);
+	background-size: cover;
+	background-color: #888888;
+  	background-blend-mode: multiply;
+  	background-position: center;
 }
 
-.d-block{
+.meme_img{
 	width: 100%;
-	height: auto;
+	height: 600px;
+	border-radius: 40px;
 }
