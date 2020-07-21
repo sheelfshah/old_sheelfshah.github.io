@@ -3,11 +3,6 @@
 	src: url("../comic_neue_font/ComicNeue-Regular.ttf");
 }
 
-body{
-	background-color: rgb(52,58,64);
-	color: white;
-}
-
 hr{
 	background-color: white;
 }
@@ -186,13 +181,6 @@ footer a, footer a:hover{
   	padding: 20px;
 }
 
-#notsosoon{
-	/*background-image: url(../images/nss_background.jpg);
-	background-size: cover;
-	background-color: #ffffff;
-  	background-blend-mode: multiply;
-  	background-position: center;*/
-}
 
 .meme_img{
 	width: 100%;
@@ -201,7 +189,6 @@ footer a, footer a:hover{
 }
 
 form{
-	background-image: url(../images/p_b_02.png);
 	background-size: cover;
 	padding-bottom: 20px;
 	border-radius: 40px;
@@ -285,6 +272,6 @@ input[type="submit"], input[type="reset"]{
 
 input[type="submit"]:hover, input[type="reset"]:hover{
     background-color: #ffffff;
-    color: #000000;
+    color: #8f8fff;
     border-width: 2px;
 }

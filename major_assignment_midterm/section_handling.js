@@ -19,36 +19,26 @@ function show_none(){
 function show_home(){
 	show_none();
 	home_div.style.display='block';
-	navbar.style.backgroundImage="";
-	navbar.style.backgroundSize = 'cover';
 }
 
 function show_me(){
 	show_none();
 	me_div.style.display='block';
-	navbar.style.backgroundImage="url('../images/p_b_02.png')";
-	navbar.style.backgroundSize = 'cover';
 }
 
 function show_projects(){
 	show_none();
 	projects_div.style.display='block';
-	navbar.style.backgroundImage="url('../images/p_b_02.png')";
-	navbar.style.backgroundSize = 'cover';
 }
 
 function show_nss(){
 	show_none();
 	notsosoon_div.style.display='block';
-	navbar.style.backgroundImage="url('../images/p_b_02.png')";
-	navbar.style.backgroundSize = 'cover';
 }
 
 function show_contact(){
 	show_none();
 	contact_div.style.display='block';
-	navbar.style.backgroundImage="";
-	navbar.style.backgroundSize = 'cover';
 }
 
 function click_id(id){
